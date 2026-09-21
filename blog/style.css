@@ -1,0 +1,168 @@
+/* ///////////////
+   Colors Design Guide :
+   I could probably use the initialization method through var, but I'll get confused.
+   So just refer to these few colors and keep them updated.
+   Very simple, very straightforward, Very limited color palette. 
+   
+   BG - #F8EDDB
+   Text - #1B0902
+   Dates / Muted Text - #7A6F58
+   Accent / links  - #662C09
+   Accent hover - #8C5C3E
+   Borders - #DED0A8
+    */
+
+/* ROOT */ /* ROOT */
+/* ROOT */ /* ROOT */
+/* ROOT */ /* ROOT */ 
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0 2rem 3rem;
+  background: #F8EDDB;
+  color: #1B0902;
+  font-family: 'Crimson Pro', 'Times New Roman', Georgia, serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+img { max-width: 100%; 
+margin: 0 0 3rem;
+display: block; }
+
+a {
+  color: #662C09;
+  text-underline-offset: 4px;
+}
+a:hover { color: #8C5C3E; }
+a:focus-visible {
+  outline: 2px solid #662C09;
+  outline-offset: 3px;
+}
+
+.wrap {
+  max-width: 564px;
+  margin: 1rem auto;
+}
+
+/* HEADER */
+/* HEADER */
+/* HEADER */
+
+.site-header .wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.brand {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #1B0902;
+  text-decoration: none;
+}
+.brand:hover { color: #8C5C3E; }
+
+.site-nav { display: flex; gap: 2rem; font-size: 1.25rem; }
+.site-nav a { text-decoration: none; color: #1B0902; }
+.site-nav a:hover { color: #8C5C3E; }
+
+/* INDEX */
+/* INDEX */
+/* INDEX */
+
+main { padding: 1rem 0 1rem; }
+
+.intro p {
+  font-size: 1.4rem;
+  margin: 0 0 4rem;
+}
+
+.post-entry {
+  margin: 2rem 0;
+}
+.post-entry h2 {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.post-entry h2 a {
+  text-decoration: none;
+  color: #662C09;
+}
+.post-entry h2 a:hover { color: #8C5C3E; }
+
+.post-meta {
+  margin: 0.4rem 0 0;
+  font-size: 1.2rem;
+  color: #61524B;
+}
+
+/* BLOG CONTENT */
+/* BLOG CONTENT */
+/* BLOG CONTENT */
+
+.post-header { 
+margin: 6rem 0 3rem; 
+}
+.post-header h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 1.25rem;
+  max-width: 24ch;
+}
+
+.post h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 4.5rem 0 2rem;
+}
+.post p { 
+margin: 0 0 2rem; 
+}
+
+.post blockquote {
+  margin: 0 0 2rem 1rem;
+  padding-left: 2rem;
+  border-left: 4px solid #662C09;
+  font-style: italic;
+  line-height: 1.55;
+}
+.post blockquote p { margin: 0; }
+
+.back-link { margin: 1rem 0 2rem; }
+
+.post {
+	margin: 0 0 8rem; 
+}
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+.site-footer .wrap {
+  border-top: 1px solid #DED0A8;
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  color: #7A6F58;
+}
+.site-footer a { color: #662C09; }
+.site-footer a:hover { color: #8C5C3E; }
+
+/* Responsive goes here */
+/* Responsive goes here */
+/* Responsive goes here */
+/* Responsive goes here */
+	   
+@media (max-width: 360px) {
+  body { font-size: 1.25rem; }
+  .post-header h1 { font-size: 2rem; }
+  .site-header .wrap { flex-direction: column; align-items: flex-start; }
+}
